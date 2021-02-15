@@ -6,26 +6,37 @@
  <meta http-equiv="Content-Language" content="fr">
  <link rel="stylesheet" href="style.css">
  <script src="script.js" defer></script>
- <title>Tic Tac Toe</title>
+ <title>TicTacToe</title>
 </head>
 
 <body>
-  <p class="tictactoe" style="margin: 0;">Tic Tac Toe</p>
+  <audio id="boop" src="assets/boop.wav" type="audio/mpeg"></audio>
+  <audio id="success" src="assets/success.mp3" type="audio/mpeg"></audio>
+
+  
+  
+  <p id="compteur"></p>
+
+  <p class="tictactoe" style="margin: 0; color: black;">Tic Tac Toe</p>
+ 
+  
+
   <div class="board" id="board">
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
+    <div class="cell" data-cell onclick="play()"></div>
+    <div class="cell" data-cell onclick="play()"></div>
+    <div class="cell" data-cell onclick="play()"></div>
+    <div class="cell" data-cell onclick="play()"></div>
+    <div class="cell" data-cell onclick="play()"></div>
+    <div class="cell" data-cell onclick="play()"></div>
+    <div class="cell" data-cell onclick="play()"></div>
+    <div class="cell" data-cell onclick="play()"></div>
+    <div class="cell" data-cell onclick="play()"></div>
   </div> 
 
+
   <div class="winning-message" id="winningMessage">
-      <div data-winning-message-text></div>
-      <button id="restartButton">Recommencer</button>
+      <div data-winning-message-text style="text-align: center"></div>
+      <button id="restartButton" style="width: 150px; height: 45px">Replay</button>
   </div>
 </body>
 </html>
